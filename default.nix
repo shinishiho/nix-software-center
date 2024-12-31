@@ -58,7 +58,7 @@
 
   postInstall = ''
     wrapProgram $out/bin/nix-software-center --prefix PATH : '${lib.makeBinPath [
-      pkgs.kitty
+      pkgs.gnome-console
       pkgs.gtk3 # provides gtk-launch
       pkgs.sqlite
     ]}'
